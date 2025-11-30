@@ -1,8 +1,7 @@
 #include <iostream>
-#include <algorithm> // для sort
+#include <algorithm>
 using namespace std;
 
-// Базовый класс DynamicArray
 class DynamicArray {
 protected:
     int* data;
@@ -90,7 +89,6 @@ public:
     }
 };
 
-// Наследник с дополнительными методами
 class ExtendedArray : public DynamicArray {
 public:
     ExtendedArray(int s) : DynamicArray(s) {}
@@ -137,7 +135,6 @@ public:
     }
 };
 
-// Пример использования
 int main() {
     ExtendedArray arr(5);
     arr.set(0, 10);
